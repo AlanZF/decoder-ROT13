@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /* Program testing to develop logic to decode/encode the message */
-public class Main {
+public class Algorithm {
     final static String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public static String[] convertStringToArray(String text) {
