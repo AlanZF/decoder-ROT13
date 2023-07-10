@@ -38,7 +38,7 @@ public class Algorithm {
         return Arrays.toString(letter);
     }
     public static void main(String[] args) {
-        Main main = new Main();
-        System.out.println(main.decodeEncode("URYYB JBEYQ"));
+        Algorithm alg = new Algorithm();
+        System.out.println(alg.decodeEncode("URYYB JBEYQ"));
     }
 }
