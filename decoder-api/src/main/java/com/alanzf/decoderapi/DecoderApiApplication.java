@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DecoderApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DecoderApiApplication.class, args);
+		System.out.println("Hello World");
 	}
 
 }

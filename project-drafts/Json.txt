@@ -1,0 +1,20 @@
+Json enviado:
+{
+	message: "UUU UUU" (mensagem para decifrar)
+	decipheredMessage: null (mensagem decifrada)
+}
+
+Json retornado:
+{
+	message: "UUU UUU" (mensagem para decifrar)
+	decipheredMessage: "HHH HHH" (mensagem para decifrar)
+}
+
+Aplicar DTOs/ModelMapper:
+{
+	message: "UUU UUU" (mensagem para decifrar)
+}
+
+{
+	decipheredMessage: "HHH HHH" (mensagem para decifrar)
+}

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84d6c16-ebd5-4f9d-9702-74f3f180e9d6" name="Changes" comment="" />
+    <list default="true" id="d84d6c16-ebd5-4f9d-9702-74f3f180e9d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/src/main/java/com/alanzf/decoderapi/DecoderApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/decoder-api/src/test/java/com/alanzf/decoderapi/DecoderApiApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +35,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/019768631/Documents/GitHub/decoder-ROT13/decoder-api",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
