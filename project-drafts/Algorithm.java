@@ -11,6 +11,18 @@ public class Algorithm {
         return convText;
     }
 
+    public static String convertArrayToString(String[] array) {
+        String str = "";
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] == "") {
+                str += "\s";
+            } else {
+                str += array[i];
+            }
+        }
+        return str;
+    }
+
     public List<Integer> findIndex(String message) {
         String[] msg = convertStringToArray(message);
         List<Integer> indexes = new ArrayList<>();
@@ -23,22 +35,24 @@ public class Algorithm {
         return indexes;
     }
 
-    public String decodeEncode(String message) {
+    public String decode(String message) {
         List<Integer> indexes = findIndex(message);
         String[] a = convertStringToArray(alphabet);
-        String[] letter = new String[indexes.size()];
+        String[] letters = new String[indexes.size()];
 
         for(int i = 0; i < indexes.size(); i++) {
             if(indexes.get(i) == -1) {
-                letter[i] = "";
+                letters[i] = "";
             } else {
-                letter[i] = a[indexes.get(i)+13];
+                letters[i] = a[indexes.get(i)+13];
             }
         }
-        return Arrays.toString(letter);
+        String decipheredMessage = convertArrayToString(letters);
+        return decipheredMessage;
     }
+
     public static void main(String[] args) {
         Algorithm alg = new Algorithm();
-        System.out.println(alg.decodeEncode("URYYB JBEYQ"));
+        System.out.println(alg.decode("URYYB JBEYQ"));
     }
 }

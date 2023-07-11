@@ -1,22 +1,25 @@
 package com.alanzf.decoderapi.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name="Decoder")
+@SequenceGenerator(name="seq_dec", sequenceName="dec_seq", allocationSize=1)
 public class Decoder {
 
-
+    @Id
+    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="seq_dec")
+    @Column(name="id")
+    private Integer id;
     @Column(name="message", nullable=false)
     private String message;
 
     @Column(name="decipheredMessage", nullable=true)
     private String decipheredMessage;
-    //private final String alphabet;
 
-    Decoder(String message, String decipheredMessage, String alphabet) {
+    public Decoder() {}
+    public Decoder(String message, String decipheredMessage, String alphabet) {
         this.message = message;
         this.decipheredMessage = decipheredMessage;
     }
