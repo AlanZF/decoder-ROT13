@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DecoderComponent } from './components/decoder/decoder/decoder.component';
 
-const routes: Routes = [
-  { path: "decoder", component: DecoderComponent }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
