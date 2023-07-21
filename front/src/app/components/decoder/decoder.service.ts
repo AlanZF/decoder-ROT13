@@ -6,7 +6,7 @@ import { Observable, map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DecodeMessageService {
+export class DecoderService {
 
   private readonly API = "api/";
 
@@ -21,8 +21,7 @@ export class DecodeMessageService {
   decodeMessage(decoder: Decoder): Observable<Decoder> {
     return this.http.post<Decoder>(this.API + 'decode',
       decoder, this.httpOptions)
-      .pipe(
-        map((obj) => obj));
+        .pipe(
+          map((obj) => obj));
   }
-
 }

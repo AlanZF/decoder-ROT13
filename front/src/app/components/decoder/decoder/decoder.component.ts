@@ -1,22 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Decoder } from '../model/decoder';
-import { DecodeMessageService } from '../decoder.service';
+import { DecoderService } from '../decoder.service';
 
 @Component({
-  selector: 'decoder-decoderM',
+  selector: 'app-decoder',
   templateUrl: './decoder.component.html',
   styleUrls: ['./decoder.component.css']
 })
+
 export class DecoderComponent implements OnInit {
 
+  panelOpenState = false;
   decoder = {} as Decoder;
 
-  constructor(private service: DecodeMessageService) { }
+  constructor(private decoderService: DecoderService) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void { };
 
-  decoderMessage(): void {
-    this.service.decodeMessage(this.decoder).subscribe(() => {});
+  decodeMessage(): void {
+    this.decoderService.decodeMessage(this.decoder)
+      .subscribe(() => {});
   }
 
 }
