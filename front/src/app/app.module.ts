@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -26,6 +27,7 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatExpansionModule,
     MatFormFieldModule,
+    FormsModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,

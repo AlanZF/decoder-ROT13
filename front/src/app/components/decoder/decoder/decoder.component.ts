@@ -11,7 +11,9 @@ import { DecoderService } from '../decoder.service';
 export class DecoderComponent implements OnInit {
 
   panelOpenState = false;
-  decoder = {} as Decoder;
+  decoder: Decoder = {
+    message: "UYRTT"
+  };
 
   constructor(private decoderService: DecoderService) {}
 

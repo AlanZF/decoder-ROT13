@@ -1,31 +1,27 @@
+<div>
+    <mat-form-field>
+        <mat-label>Encrypted message</mat-label>
+        <input matInput placeholder="Enter the encrypted message">
+    </mat-form-field>
+</div>
+
+<button mat-raised-button color="primary" (click)="decodeMessage()">Decode</button>
+<p>Decode message: </p>
+    
 <mat-card>
-    <mat-card class="card">
-        <form class="form">
-            <mat-form-field>
-                <mat-label>Encrypted message</mat-label>
-                <input matInput placeholder="Enter the encrypted message">
-            </mat-form-field>
-            <button mat-raised-button color="primary" (click)="decodeMessage()">Decode</button>
-            <p>Decoded message: {{ decoder.decipheredMessage }}</p>
-        </form>
-    </mat-card>
-    
-    
-    <mat-card class="card">
-        <mat-accordion>
-            <mat-expansion-panel (opened)="panelOpenState = true"
-                                (closed)="panelOpenState = false">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                    What's ROT13 cipher?
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <p>ROT13 is a simple letter substitution cipher that replaces a letter 
-                    with the 13th letter after it in the latin alphabet. 
-                    ROT13 is a special case of the Caesar cipher which was developed in ancient Rome.
-                    <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank">know more</a>
-                </p>
-            </mat-expansion-panel>
-        </mat-accordion>
-    </mat-card>
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                What's ROT13 cipher?
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+            <p>ROT13 is a simple letter substitution cipher that replaces a letter 
+                with the 13th letter after it in the latin alphabet. 
+                ROT13 is a special case of the Caesar cipher which was developed in ancient Rome.
+                <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank">know more</a>
+            </p>
+        </mat-expansion-panel>
+    </mat-accordion>
 </mat-card>
