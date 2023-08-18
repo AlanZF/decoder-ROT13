@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class DecoderService {
 
-  private readonly API = "api/";
+  private readonly API = "api/decode";
 
   private readonly httpOptions = {
     headers: new HttpHeaders({
@@ -19,7 +19,7 @@ export class DecoderService {
   constructor(private http: HttpClient) { }
 
   decodeMessage(decoder: Decoder): Observable<Decoder> {
-    return this.http.post<Decoder>(this.API + 'decode',
+    return this.http.post<Decoder>(this.API,
       decoder, this.httpOptions)
         .pipe(
           map((obj) => obj));

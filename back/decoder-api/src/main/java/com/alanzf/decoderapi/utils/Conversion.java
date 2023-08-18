@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Conversion {
     public static List<Integer> findIndex(String message) {
-        String[] msg = convertStringToArray(message);
+        String upperMessage = message.toUpperCase();
+        String[] msg = convertStringToArray(upperMessage);
         List<Integer> indexes = new ArrayList<>();
 
         for(int i = 0; i < msg.length; i++) {

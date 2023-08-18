@@ -5,7 +5,8 @@ import java.util.List;
 public class Rot13Decoder {
 
     public static String decode(String message) {
-        List<Integer> indexes = Conversion.findIndex(message);
+        String upperMessage = message.toUpperCase();
+        List<Integer> indexes = Conversion.findIndex(upperMessage);
         String[] a = Conversion.convertStringToArray(Constant.ALPHABET);
         String[] letters = new String[indexes.size()];
 
